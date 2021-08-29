@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+html {
+    font-size:100%;
+}
+
+body {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*font-family: 'Didact Gothic', sans-serif;*/
+}
+
+nav {
+    height: 4.3rem;
+    padding: 0rem 2.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    border-bottom: 0.1rem solid rgb(226, 226, 226);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    gap: 2.3rem;
+    align-items: center;
+}
+
+.nav-logo {
+    background-image: url("logo.PNG");
+    background-size: 100% 100%;
+    width: 4rem;
+    height: 3rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2.3rem;
+}
+
+.nav-list button {
+    background-color: rgba(255, 255, 255, 0);
+    color: #e65d33;
+    border: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding-top: 0.2rem;
+}
+
+/*.nav-list p {
+    color: #ff764d;
+}*/
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    gap: 2.3rem;
+    font-size: 1rem;
+}
+
+a.try-free {
+    color: blue;
+    font-size: 1.1rem;
+}
+
+.header {
+    height: 4.3rem;
+    padding: 0rem 2.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+a.about {
+    color: #e65d33;
+}
+
+.hero-img {
+    margin: 0rem 8rem;
+    height: 44rem;
+    background-image: url('hero-img.jpg');
+    /*background-size: cover;*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.name {
+    /* we created a class so as to bring the button to center, so that we don't need to manually
+    translate in x-direction */
+    text-align: center;
+}
+
+.hero-img button {
+    color: #e65d33;
+    width: 8rem;
+    height: 10rem;
+    font-size: 8rem;
+
+    /* making button transparent */
+    background-color: rgba(255,255,255,0);
+    border: 0.05rem solid rgba(255,255,255,0);
+    transform: translateY(15rem) translateX(-8rem);
+}
+
+.intro {
+    margin: 5rem 20rem;
+    font-size: 1.65rem;
+    padding: 2rem 3rem;
+} 
+
+.intro h4 {
+    font-weight: 600;
+    line-height: 2.7rem;
+    padding-bottom: 2rem;
+}
+
+.intro span {
+    color: blue;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: rgb(39, 39, 39);
+    line-height: 2rem;
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*left1 has 40% width and right1 has 60% width*/
+
+.left1 {
+    width: 40%;
+    height: 40rem;
+    margin: 7rem 0rem; /* applied margin to top and bottom so that we'll need to translate only in x-direction now. */
+}
+
+.left1 img {
+    width: 100%;
+    height: 100%;
+    transform: translateX(7rem); /*notice, img has same margin from all sides, hence translated with same value*/
+}
+
+.right1 {
+    background-color: #fbffa7;
+    z-index: -10;
+    width: 60%;
+    height: 54rem;
+    text-align: center; /*did it so that image automatically will be aligned to center */
+}
+
+.right1 img {
+    margin: 14rem 7rem; /*align properly w.r.t top & bottom */
+    height: 26rem; /*26rem because grid1 image has height 40rem
+    7rem padding from top and bottom => 40-(7+7) = 26rem*/
+    transform: translateX(3.5rem); /*did it 3.5rem (7/2=3.5rem) because 7rem didn't provide desired result
+    so tried with 3.5 (a multiple of 7)*/
+}
+
+.below-grid1, .below-flex2, .text-above-flex3, .above-flex4 {
+    margin: 9rem 24rem;
+    font-size: 1.65rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+}
+
+.below-grid1 p, .below-flex2 p, .text-above-flex3 p, .above-flex4 p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-top: 2rem;
+    line-height: 2rem;
+}
+
+.flex2 {
+    margin: 5rem 0rem;
+    display: flex;
+    flex-direction: row;
+}
+
+/*left has 60% width and right has 40% width */
+
+.left2 {
+    background-color: #b6ffc0;
+    width: 58%;
+    z-index: -3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.left-top {
+    margin: 7rem 14rem 7rem 7rem; /*14rem for right because we want 7rem space from right-img */
+}
+
+.left-top img {
+    width: 100%;
+    height: 100%;
+}
+
+.left-bottom {
+    margin: 0rem 14rem 7rem 7rem; /*14rem for right because we want 7rem space from right-img */
+}
+
+.left-bottom img {
+    width: 100%;
+    bottom: 100%;
+}
+
+.right2 {
+    width: 42%;
+}
+
+.right2 img {
+    width: 100%;
+    height: 44rem;
+    /*margin for top & bottom is 10rem because on official site
+    this image has double padding than left-top wali image, assuming them 14rem and 7rem respectively */
+    margin: 14rem 0rem; /*now image needs to be transformed only in x-direction*/
+    transform: translateX(-7rem); /*all image have 5rem spacing on all sides*/
+}
+
+.img-above-flex3 {
+    margin: 9rem;
+    height: 50rem;
+    background-image: url("below-flex2.jpg");
+    background-size: 100% 100%;
+}
+
+.flex3 {
+    margin: 7rem 18%;
+    height: 54rem;
+    background-color: #d5b3ff;
+    z-index: -12;
+    display: flex;
+    flex-direction: row;
+    gap: 25%; /*gap is 33% because 18% isn't equal to 18% gap of body/outside this div 
+    since 33% maked 1/3rd part of thid div, which is approx equal to 18% of outside */
+}
+
+.flex3-left {
+    margin: 14rem 0rem 14rem 7rem;
+    background-color: darkcyan;
+}
+
+.flex3-left img {
+    width: 200%;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+.flex3-right {
+    margin: 7rem 0rem;
+    background-color: darkblue;
+}
+
+.flex3-right img {
+    width: 179.5%; /*by doing width approx 200%, makes me avoid translating in x-direction*/
+    height: 100%;
+    /*transform: translateX(50%); /*because 33% was less*/
+}
+
+.flex4 {
+    margin: 7rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #b1c5ff;
+}
+
+.flex4-left {
+    width: 50%;
+    background-image: url('flex4.jpg');
+    background-size: 100% 100%;
+}
+
+.flex4-right {
+    width: 50%;
+    text-align:justify;
+    line-height: 3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.flex4-right p {
+    margin: 11rem 9rem 2rem 9rem;
+}
+
+.flex4-right a {
+    text-decoration: none;
+    color: rgb(0, 0, 197);
+    margin: 0rem 9rem 9rem 9rem;
+}
+
+footer {
+    margin: 10rem 7rem 5rem 7rem;
+}
+
+.footer-head {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.footer-content {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    font-size: 1.15rem;
+}
+
+.footer-row1, .footer-row2 {
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-row2 {
+    justify-content: left;
+    gap: 3.8rem;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: black;
+}
+
+.f1, .f2, .f3, .f5, .f4 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+}
+
+form input {
+    background-color: rgb(238, 238, 238);
+    border: 0.05rem solid rgb(238, 238, 238);
+    width: 80%;
+    padding-left: 1rem;
+}
+
+form ::placeholder {
+    padding: 0.2rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    color: rgb(145, 145, 145);
+}
+
+form button {
+    width: 20%;
+    background-color: rgb(0, 0, 216);
+    border: 0.05rem solid rgb(0, 0, 216);
+    font-size: 1.1rem;
+    color: white;
+}
+
+.footer-end {
+    margin: 7rem 0rem 9rem 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-end a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding-right: 0.5rem;
+}
+
+.footer-end span {
+    
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.arrow {
+    display: inline-block; /*NEW LESSON- transform property doesn't work on inline elements*/
+    transform: rotate(90deg);
+}
+
+@media screen 
+  and (max-device-width: 480px) 
+  and (orientation: portrait){
+    html {
+        font-size: 72%;
+    }
+
+    body {
+        padding: 1rem;
+    }
+    
+    nav {
+        height: 7rem;
+        width: 145%;
+        padding: 1rem 2rem;
+    }
+    
+    nav a {
+        display: none;
+    }
+
+    .nav-logo {
+        width: 10rem;
+        height: 6rem;
+        margin-right: 2.7rem;
+    }
+
+    .nav-list button {
+        font-size: 2.5rem;
+        color: black;
+    }
+
+    .header {
+        height: 6rem;
+        padding: 1rem 2rem;
+        gap: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .hero-img {
+        margin: 0rem 3rem;
+        height: 81rem;
+        width: 145%;
+        background-size: 200% 100%;
+        background-position-x: -27rem; 
+        text-align: center;
+    }
+    
+    .name button {
+        transform: translateY(33rem) translateX(-9rem);
+    }
+
+    .intro {
+        margin: 3rem 0rem;
+        width: 140%;
+        line-height: 7rem;
+        font-size: 3rem;
+        display: inline-block;
+    } 
+    
+    .intro h4 {
+        padding-bottom: 2rem;
+    }
+    
+    .intro span {
+        color: blue;
+    }
+    
+    .intro p {
+        font-size: 1.1rem;
+        color: rgb(39, 39, 39);
+        line-height: 2rem;
+    }
+    
+  }

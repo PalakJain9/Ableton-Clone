@@ -615,7 +615,7 @@ and (max-device-width : 813px) {
         color: black;
     }
 
-    .nav-list a, .nav-right {
+    .nav-list, .nav-right {
         display: none;
     }
 
@@ -814,7 +814,7 @@ and (max-device-width : 480px) {
         color: black;
     }
 
-    .nav-list a, .nav-right {
+    .nav-list, .nav-right {
         display: none;
     }
 

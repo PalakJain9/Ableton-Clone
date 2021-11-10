@@ -38,7 +38,7 @@ nav a {
 }
 
 .nav-logo {
-    background-image: url("logo.PNG");
+    background-image: url("images/logo.PNG");
     background-size: 100% 100%;
     width: 3.8rem;
     height: 2.5rem;
@@ -96,7 +96,7 @@ a.about {
 .hero-img {
     margin: 0rem 8rem;
     height: 44rem;
-    background-image: url('hero-img.jpg');
+    background-image: url('images/hero-img.jpg');
     object-fit: fill;
     background-size: 100% 100%;
     display: flex;
@@ -248,7 +248,7 @@ a.about {
 .img-above-flex3 {
     margin: 9rem;
     height: 50rem;
-    background-image: url("below-flex2.jpg");
+    background-image: url("images/below-flex2.jpg");
     background-size: 100% 100%;
 }
 
@@ -293,7 +293,7 @@ a.about {
 
 .flex4-left {
     width: 50%;
-    background-image: url('flex4.jpg');
+    background-image: url('images/flex4.jpg');
     background-size: 100% 100%;
 }
 

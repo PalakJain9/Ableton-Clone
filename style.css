@@ -630,7 +630,7 @@ and (max-device-width : 813px) {
 
     .hero-img {
         margin: 0rem 2rem;
-        height: 98vh;
+        height: 80vh;
         width: 89%;
     }
 
@@ -829,7 +829,7 @@ and (max-device-width : 480px) {
 
     .hero-img {
         margin: 0rem 2rem;
-        height: 98vh;
+        height: 80vh;
         width: 89%;
     }
 
